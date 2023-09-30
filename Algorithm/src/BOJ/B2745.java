@@ -20,27 +20,6 @@ public class B2745 {
 		int b = scan.nextInt();
 		int result = 0;
 		
-		String str = Integer.toString(n); // 정수 n을 문자열 str로 변환	
-		int len = str.length();
-		try {
-			for(int i=len; i>0;i--) {
-				int a = Integer.parseInt(str.substring(i));
-				
-				if(a < 10) {
-					//10진법을 넘어가지 않는 경우
-					result += a * b^(len-i);
-				}else {
-					//10진법을 넘어가는 경우 (A:10, B:11, ... , Z:35)
-					for(char c='A'; c<='Z';c++) {
-						
-					}
-				}
-							
-			}
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
-		
 		System.out.println(result);
 	}
 }
